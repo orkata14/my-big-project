@@ -69,14 +69,4 @@ def vwap_update(df: pd.DataFrame,
 
 
 # B) technical_analysis/run_technical.py – לקרוא ל-vwap_update בלי לרענן בסיס
-import pandas as pd
-from technical_analysis.vwap_technical import vwap_update
-from technical_analysis.bb_technical import bb_update
-
-def add_all_technical(df: pd.DataFrame, *, mode: str = "stream",
-                      bb_window: int = 20, bb_num_std: float = 2.0,
-                      vwap_on_tol_pct: float = 0.02) -> pd.DataFrame:
-    df = vwap_update(df, mode=mode, on_tol_pct=vwap_on_tol_pct)            # רק טכני על df["vwap"] הקיים
-    df = bb_update(df, mode=mode, window=bb_window, num_std=bb_num_std,    # BB טכני
-                   refresh_base=False, compute_if_missing=False)
-    return df
+#

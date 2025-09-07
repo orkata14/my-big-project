@@ -1,0 +1,166 @@
+{
+  "BTCUSDT :1m": {
+    "pid": 15152,
+    "symbol": "BTCUSDT ",
+    "interval": "1m",
+    "started_at": 1756598411,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT ",
+      "--interval",
+      "1m"
+    ]
+  },
+  "BTCUSDT:1": {
+    "pid": 20756,
+    "symbol": "BTCUSDT",
+    "interval": "1",
+    "started_at": 1756673767,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "1"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-1.log"
+  },
+  "BTCUSDT:1m": {
+    "pid": 23464,
+    "symbol": "BTCUSDT",
+    "interval": "1m",
+    "started_at": 1756765063,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "1m"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-1m.log"
+  },
+  "BTCUSDT:5m": {
+    "pid": 8376,
+    "symbol": "BTCUSDT",
+    "interval": "5m",
+    "started_at": 1756765169,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "5m"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-5m.log"
+  },
+  "BTCUSDT:15S": {
+    "pid": 20332,
+    "symbol": "BTCUSDT",
+    "interval": "15S",
+    "started_at": 1756769107,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "15S"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-15S.log"
+  },
+  "BTCUSDT:15s": {
+    "pid": 26264,
+    "symbol": "BTCUSDT",
+    "interval": "15s",
+    "started_at": 1756790206,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "15s"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-15s.log"
+  },
+  "BTCUSDT:30S": {
+    "pid": 29248,
+    "symbol": "BTCUSDT",
+    "interval": "30S",
+    "started_at": 1756931768,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "30S"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-30S.log"
+  },
+  "BTCUSDT:60s": {
+    "pid": 26564,
+    "symbol": "BTCUSDT",
+    "interval": "60s",
+    "started_at": 1757019890,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "60s"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-60s.log"
+  },
+  "BTCUSDT:30": {
+    "pid": 4276,
+    "symbol": "BTCUSDT",
+    "interval": "30",
+    "started_at": 1757019921,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "30"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-30.log"
+  },
+  "BTCUSDT:40s": {
+    "pid": 30204,
+    "symbol": "BTCUSDT",
+    "interval": "40s",
+    "started_at": 1757079232,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "40s"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-40s.log"
+  },
+  "BTCUSDT:30s": {
+    "pid": 29928,
+    "symbol": "BTCUSDT",
+    "interval": "30s",
+    "started_at": 1757081393,
+    "cmd": [
+      "C:\\Users\\Or Kata\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\Or Kata\\Desktop\\BOT\\main.py",
+      "--symbol",
+      "BTCUSDT",
+      "--interval",
+      "30s"
+    ],
+    "log_path": "C:\\Users\\Or Kata\\Desktop\\BOT\\backend\\logs\\BTCUSDT-30s.log"
+  }
+}

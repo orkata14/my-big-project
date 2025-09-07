@@ -28,7 +28,16 @@ class TradeBuffer:
             old_key = self._ids.popleft()
             self._rows.popleft()
             self._idset.discard(old_key)
-            
+        # Normalize incoming timestamp to UTC-aware pandas Timestamp to avoid
+        # tz-naive vs tz-aware comparison errors later when slicing/purging.
+        if trade.get("ts") is not None:
+            try:
+                trade["ts"] = pd.to_datetime(trade.get("ts"), utc=True)
+            except Exception:
+                # If conversion fails, leave as-is; downstream code will coerce
+                # or drop invalid rows.
+                pass
+
         self._rows.append(trade)
         self._ids.append(k)
         self._idset.add(k)
@@ -42,12 +51,17 @@ class TradeBuffer:
         מחזיר DataFrame "שטוח" של כל העסקאות בטווח [t0, t1) ובסימבול (אם צוין).
         לא מוסיף כאן time=t0. זה ייעשה באגרגטור.
         """
-        rows = [
-            r for r in self._rows
-            if r.get("ts") is not None
-            and t0 <= pd.Timestamp(r["ts"]) < t1
-            and (symbol is None or r.get("symbol") == symbol)
-        ]
+        # Ensure row timestamps are compared as UTC-aware timestamps.
+        rows = []
+        for r in self._rows:
+            if r.get("ts") is None:
+                continue
+            try:
+                r_ts = pd.to_datetime(r["ts"], utc=True)
+            except Exception:
+                continue
+            if t0 <= r_ts < t1 and (symbol is None or r.get("symbol") == symbol):
+                rows.append(r)
         if not rows:
             return pd.DataFrame(columns=["ts", "symbol", "price", "size", "side", "best_bid", "best_ask", "id"])
         df = pd.DataFrame(rows)
@@ -62,6 +76,12 @@ class TradeBuffer:
         keep_ids = deque()
         idset = set()
         for row, k in zip(self._rows, self._ids):
-            if row.get("ts") is not None and pd.Timestamp(row["ts"]) >= cutoff:
+            if row.get("ts") is None:
+                continue
+            try:
+                r_ts = pd.to_datetime(row["ts"], utc=True)
+            except Exception:
+                continue
+            if r_ts >= cutoff:
                 keep.append(row); keep_ids.append(k); idset.add(k)
         self._rows, self._ids, self._idset = keep, keep_ids, idset
